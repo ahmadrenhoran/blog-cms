@@ -58,8 +58,8 @@ const emit = defineEmits(['logout'])
 const userInitials = computed(() => {
   if (!props.userName) return 'W'
   const parts = props.userName.split(' ')
-  if (parts.length >= 2) {
-    return (parts[0][0] + parts[1][0]).toUpperCase()
+  if (parts.length >= 2 && parts[0] && parts[1]) {
+    return (parts[0].charAt(0) + parts[1].charAt(0)).toUpperCase()
   }
   return props.userName.substring(0, 2).toUpperCase()
 })
