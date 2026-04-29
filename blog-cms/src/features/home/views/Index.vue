@@ -6,6 +6,7 @@ import TextField from '@/components/forms/TextField.vue'
 import { QuillEditor } from '@vueup/vue-quill'
 import '@vueup/vue-quill/dist/vue-quill.snow.css'
 import DialogConfirm from '@/components/DialogConfirm.vue'
+import Navbar from '@/components/Navbar.vue'
 import { uploadSingleFile } from '@/utils/utils'
 import { createPost, getPosts, updatePost, deletePost as deletePostService } from '../services/home.service'
 
@@ -227,18 +228,7 @@ onMounted(fetchPosts)
     <div class="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_top_left,rgba(190,154,106,0.16),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(217,119,87,0.1),transparent_24%)]"></div>
 
     <!-- ── Navbar ── -->
-    <nav class="sticky top-0 z-30 border-b border-stone-200/60 bg-white/70 backdrop-blur-xl">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <div class="flex items-center gap-3">
-          <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-stone-900 text-sm font-bold text-white">B</div>
-          <span class="font-serif text-lg font-semibold tracking-tight text-stone-900">Everyone's Blog</span>
-        </div>
-        <div class="flex items-center gap-4">
-          <span class="hidden text-sm font-medium text-stone-600 sm:inline">{{ authStore.user?.name || 'Writer' }}</span>
-          <button type="button" class="rounded-full border border-stone-200 bg-white px-4 py-1.5 text-xs font-semibold text-stone-600 transition hover:bg-stone-50" @click="logout">Keluar</button>
-        </div>
-      </div>
-    </nav>
+    <Navbar :user-name="authStore.user?.name" @logout="logout" />
 
     <!-- ── Main Content ── -->
     <main class="relative mx-auto max-w-6xl px-4 py-8 sm:px-6">
