@@ -8,7 +8,7 @@
           B
         </div>
         <div class="flex flex-col">
-          <span class="font-serif text-lg font-bold tracking-tight text-stone-900 leading-none">BlogCMS</span>
+          <span class="font-serif text-lg font-bold tracking-tight text-stone-900 leading-none">Everyone's Blog</span>
           <span class="text-[10px] font-medium uppercase tracking-widest text-stone-500 mt-1">Creator Workspace</span>
         </div>
       </div>

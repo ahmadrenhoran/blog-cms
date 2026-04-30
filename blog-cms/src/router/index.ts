@@ -14,6 +14,12 @@ const routes = [
     component: () => import("@/features/home/views/Index.vue"),
     meta: { layout: "AppLayout", requiresAuth: true },
   },
+  {
+    path: "/api-docs",
+    name: "ApiDocs",
+    component: () => import("@/features/public/views/ApiDocs.vue"),
+    meta: { layout: "AuthLayout" },
+  },
 ];
 
 const router = createRouter({
