@@ -2,6 +2,8 @@
 
 Blog CMS adalah aplikasi dashboard untuk menulis dan mengelola artikel blog. Aplikasi ini dibangun dengan Vue 3, Vite, TypeScript, Pinia, Vue Router, Tailwind CSS, Axios, dan Quill editor.
 
+Selain fitur CMS standar, aplikasi ini juga dilengkapi AI Writing Assistant untuk membantu proses penulisan blog langsung dari editor.
+
 ## Fitur
 
 - Autentikasi login dan register.
@@ -10,8 +12,23 @@ Blog CMS adalah aplikasi dashboard untuk menulis dan mengelola artikel blog. Apl
 - Status artikel: `draft`, `published`, dan `archived`.
 - Rich text editor untuk menulis konten.
 - Upload cover image.
-- AI writing assistant untuk membuat outline, draft, judul, rewrite, dan CTA.
+- AI Writing Assistant untuk membuat outline, draft, ide judul, rewrite konten, dan CTA.
 - Halaman public API docs untuk mengambil daftar dan detail post yang sudah published.
+
+## Fitur AI Writing Assistant
+
+AI Writing Assistant tersedia di editor blog dan membantu user mempercepat proses penulisan. Fitur ini dapat membaca konteks dari judul, isi draft, dan prompt tambahan yang ditulis user.
+
+Kemampuan AI yang tersedia:
+
+- Membuat draft artikel dari prompt awal.
+- Membuat outline atau kerangka artikel.
+- Memberikan ide judul atau headline.
+- Rewrite dan improve konten yang sudah ada.
+- Membuat penutup atau call-to-action.
+- Menampilkan model AI yang dipakai dan ringkasan penggunaan token jika tersedia dari backend.
+
+AI writer memakai endpoint backend `POST v1/ai/writing`, sehingga user harus login terlebih dahulu sebelum bisa memakai fitur ini.
 
 ## Tech Stack
 
@@ -52,7 +69,10 @@ VITE_OPENROUTER_API_KEY=your_openrouter_api_key
 VITE_OPENROUTER_MODEL=openrouter/free
 ```
 
-Catatan: request API utama memakai `VITE_API_BASE_URL`. Jika tidak diisi, aplikasi memakai fallback `http://localhost:3000`.
+Catatan:
+
+- Request API utama memakai `VITE_API_BASE_URL`. Jika tidak diisi, aplikasi memakai fallback `http://localhost:3000`.
+- Fitur AI diproses lewat backend melalui endpoint `v1/ai/writing`. Pastikan backend sudah dikonfigurasi dengan provider/model AI yang sesuai.
 
 ## Menjalankan Project
 
