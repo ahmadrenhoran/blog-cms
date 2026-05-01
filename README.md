@@ -6,12 +6,12 @@ Selain fitur CMS standar, aplikasi ini juga dilengkapi AI Writing Assistant untu
 
 ## 📸 Preview
  
-| Dashboard Utama | API Docs for Public |
+| Halaman Login & Register | Dashboard CMS (Home) |
+| :---: | :---: |
+| ![Auth](https://huggingface.co/datasets/acaca28/fivespace-storage/resolve/main/uploads/1777605851783-klt6fygw-screenshot-2026-05-01-at-10-18-33.png) | ![Home](https://huggingface.co/datasets/acaca28/fivespace-storage/resolve/main/uploads/1777605962613-691s2pdb-screenshot-2026-05-01-at-10-18-55.png) |
+| **Public API Docs** | **Editor & AI Writing Assistant** |
+| ![API Docs](https://huggingface.co/datasets/acaca28/fivespace-storage/resolve/main/uploads/1777605905991-6m9vlmsk-screenshot-2026-05-01-at-10-18-41.png) | ![Blog Editor](https://huggingface.co/datasets/acaca28/fivespace-storage/resolve/main/uploads/1777605997961-uj8yknq3-screenshot-2026-05-01-at-10-19-15.png) |
 
-| ![Auth](https://huggingface.co/datasets/acaca28/fivespace-storage/resolve/main/uploads/1777605851783-klt6fygw-screenshot-2026-05-01-at-10-18-33.png) | ![API Docs](https://huggingface.co/datasets/acaca28/fivespace-storage/resolve/main/uploads/1777605905991-6m9vlmsk-screenshot-2026-05-01-at-10-18-41.png)
-
-| Home | Smart Blog Editor |
- ![Home](https://huggingface.co/datasets/acaca28/fivespace-storage/resolve/main/uploads/1777605962613-691s2pdb-screenshot-2026-05-01-at-10-18-55.png) | ![Blog Editor](https://huggingface.co/datasets/acaca28/fivespace-storage/resolve/main/uploads/1777605997961-uj8yknq3-screenshot-2026-05-01-at-10-19-15.png)
 
 ## Fitur
 
